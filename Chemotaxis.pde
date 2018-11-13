@@ -1,13 +1,21 @@
- Bacteria b1 = new Bacteria;
- 
- void setup(){     
- 	size(400,400);
-  background(255);
- }   
- 
- void draw() {    
- 	//move and show the bacteria   
- }  
+Bacteria[]bacteria;
+
+void setup(){
+  size(400,400);
+  background(0);
+  bact = new Baceria[11];
+  for(int i = 0; i < bact.length;i++)
+  {
+    bact[i] = new Bacteria();
+  }
+}
+void draw(){
+  for(int i = 0; i < dots.length;i++)
+  {
+    dots[i].move() ;
+  }
+}
+
  
  class Bacteria {     
  	int bactSize, bactX, bactY;
