@@ -1,3 +1,9 @@
+/* CHEMOTAXIS Project
+ * For Computer Science 12
+ * Goals: to create a simulation of an object using random walk
+ * By: Blythe O'Connor
+ * Due : November 15, 2018
+ */
 Bacteria[] bact;
 
 void setup(){
@@ -10,6 +16,7 @@ void setup(){
     bact[i] = new Bacteria();
   }
 }
+
 void draw(){
   for(int i = 0; i < bact.length;i++)
   {
